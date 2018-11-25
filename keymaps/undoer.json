@@ -1,0 +1,7 @@
+{
+  "atom-workspace": {
+    "ctrl-u": "undoer:toggle",
+    "ctrl-z": "undoer:undo",
+    "ctrl-shift-z": "undoer:redo"
+  }
+}

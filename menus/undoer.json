@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle undoer",
+        "command": "undoer:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "undoer",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "undoer:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
