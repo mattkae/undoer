@@ -8,7 +8,7 @@
   text-align: center;
   width: 100%;
   height: auto;
-  padding: 2em;
+  padding: @component-padding;
 }
 
 .range-slider {
@@ -21,7 +21,7 @@
   position: absolute;
   width: 100%;
   height: 2.5vh;
-  background-color: red;
+  background-color: @scrollbar-color;
   top: 50%;
   left:0;
   transform: translateY(-50%);
@@ -31,7 +31,8 @@
   position: absolute;
   width: 5vh;
   height: 5vh;
-  background-color: blue;
+  border-radius: 5vh;
+  background-color: @input-background-color;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -39,7 +40,6 @@
 .range-slider .handle:hover,
 .range-slider .handle.dragging {
   cursor: pointer;
-  background-color: cyan;
 }
 
 .range-slider .tick {
@@ -47,8 +47,10 @@
   width: auto;
   top: 75%;
   transform: translateX(-50%);
+  font-family: @font-family;
+  color: @text-color-info;
 }
 
 .range-slider .tick.selected {
-  color: red;
+  color: @text-color-success;
 }
